@@ -119,7 +119,7 @@
           </ul>
         </div>
         <div class="image">
-          <img src="images/IMG-6911.JPG" alt="" />
+          <img class="photo" src="images/IMG-6911.JPG" alt="" />
         </div>
       </section>
 
@@ -136,7 +136,7 @@
       I began to study nursing at 14 years old and followed the path to become a Registered Nurse. While it was a
       great experience, I longed for an avenue to express my creativity!
       <br />
-      Everyone is creative in some way right? And so my search began ...
+      Everyone is creative in some way right? And so my search began...
     </p>
     
 <!-- Removed button here -->
@@ -147,7 +147,7 @@
   <div class="image">
     
     
-    <img src="images/gallery/fulls/forestpic.PNG" alt="" />
+    <img class="photo" data-src="images/gallery/fulls/forestpic.PNG" alt="" />
   </div>
 </section>
 
@@ -167,7 +167,7 @@
         </ul>
       </div>
       <div class="image">
-        <img src="images/phuket.JPG" alt="" />
+        <img class="photo" data-src="images/phuket.JPG" alt="" />
       </div>
     </section>
 
@@ -188,7 +188,7 @@
           </ul>
         </div>
         <div class="image">
-          <img src="images/Screen Shot 2020-06-11 at 8.20.04 AM.png" alt="" />
+          <img class="photo" data-src="images/Screen Shot 2020-06-11 at 8.20.04 AM.png" alt="" />
         </div>
       </section>
 
@@ -221,7 +221,7 @@
           </p> -->
         </div>
 
-        <!-- Gallery -->
+        Gallery
         <div class="gallery style2 medium lightbox onscroll-fade-in">
           <article>
             <a href="/Users/acltc/actualize/DelissaB.github.io/images/gallery/thumbs/IMG-6898.PNG" class="image">
@@ -598,6 +598,9 @@
     </div>
 
     <!-- Scripts -->
+<!-- Lazy Load images -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"></script>  
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -614,6 +617,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- Added in Bootstrap Nav Bar -->
-
+    <script>
+      const mYLazyLoad = new LazyLoad({
+      elements_selector: ".photo"
+      });
+     </script>
   </body>
 </html>
